@@ -3,6 +3,7 @@ import Axios from "axios";
 import styled from "styled-components";
 import MovieComponent from "./Components/MovieComponent";
 import MovieInfoComponent from "./Components/MovieInfoComponent";
+import Home from "./Components/Home"
 
 export const API_KEY = "812ec491";
 
@@ -94,8 +95,8 @@ function App() {
     <Container>
       <Header>
         <AppName>
-          <MovieImage src="movie-icon.svg" />
-          React Movie App
+          <MovieImage src="/movieproim.png" />
+          Movie Pro by Rajesh Das
         </AppName>
         <SearchBox>
           <SearchIcon src="/search-icon.svg" />
@@ -117,7 +118,8 @@ function App() {
             />
           ))
         ) : (
-          <Placeholder src="/movie-icon.svg" />
+          // <Placeholder src="/movie-icon.svg" />
+          <Home />
         )}
       </MovieListContainer>
     </Container>
